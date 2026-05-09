@@ -331,6 +331,19 @@ OPENAI_API_KEY=your_api_key_here
 
 ---
 
+## 📸 Screenshots
+
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/b8d5fa00-5aac-4a21-b4cb-4067749a317f" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/e7d40086-d5eb-4e36-b6c4-71fa4dc73a9a" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/3328c0e3-6b37-42ac-aaa6-519c74e3d506" />
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/86e8bff5-b792-40bc-8b1b-28c922ae59c1" />
+
+---
+
 ## 💡 Future Enhancements
 
 | Icon | Enhancement | Description |
