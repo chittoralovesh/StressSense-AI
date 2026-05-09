@@ -35,17 +35,12 @@
 
 The platform is structured into two core components:
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                      StressSense AI                             │
-│                                                                 │
-│   📊 Dashboard                     🤖 Chatbot                  │
-│   ─────────────────────            ──────────────────           │
-│   ML-based stress analysis         Answers user queries         │
-│   Random Forest + Neural Net       Powered by OpenAI API        │
-│   History tracking & analytics     Mental wellness guidance     │
-└─────────────────────────────────────────────────────────────────┘
-```
+| 📊 Dashboard | 🤖 Chatbot |
+| :--- | :--- |
+| ML-based stress analysis | Answers user queries |
+| Random Forest + Neural Net | Powered by OpenAI API |
+| History tracking & analytics | Mental wellness guidance |
+
 
 ---
 
@@ -67,35 +62,15 @@ The platform is structured into two core components:
 
 StressSense AI uses a **dual-model approach** for accurate, reliable predictions:
 
-```
-         User Input Data
-               │
-               ▼
-  ┌────────────────────────────────┐
-  │       ML Prediction Layer      │
-  │                                │
-  │  🌳 Random Forest              │
-  │  ── Structured data input      │
-  │  ── Stable, reliable results   │
-  │                                │
-  │  🧬 Neural Network             │
-  │  ── Complex behavioral patterns│
-  │  ── Deep, accurate predictions │
-  └────────────────────────────────┘
-               │
-               ▼
-         Stress Level Result
-```
+**ML Prediction Layer**
 
-**🌳 Random Forest Model**
-- Handles structured input data efficiently
-- Provides stable and reliable predictions
+| Model | Input Focus | Output Focus |
+| :--- | :--- | :--- |
+| **🌳 Random Forest** | Structured data input | Stable, reliable results |
+| **🧬 Neural Network** | Complex behavioral patterns | Deep, accurate predictions |
 
-**🧬 Neural Network Model**
-- Captures complex behavioral patterns
-- Improves prediction depth and accuracy
+> 👉 Both models power the **stress analysis dashboard** together to generate the final Stress Level Result.
 
-> 👉 Both models power the **stress analysis dashboard** together.
 
 ---
 
@@ -246,76 +221,6 @@ OPENAI_API_KEY=your_api_key_here
        ├──► Vercel ──► React Frontend 🌐
        │
        └──► Render ──► Spring Boot Backend ⚙️
-```
-
----
-
-## 📸 Demo Screenshots
-
-### 📋 Stress Analysis Dashboard
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  ● ● ●   stresssense.ai/dashboard                               │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   📊 Stress Analysis Dashboard                                 │
-│                                                                 │
-│   Sleep Duration   ████████████░░░░░░░░  6.5 hrs                │
-│   Sleep Quality    ██████░░░░░░░░░░░░░░  5 / 10                 │
-│   Heart Rate       [ 78 bpm             ]                       │
-│   Snoring Rate     [ Moderate           ]                       │
-│                                                                 │
-│   Low ─────────── Moderate ─────────────────────── High         │
-│   ████████████████████████░░░░░░░░░░░░░░░░░░░  62%              │
-│                    ⚠️  Moderate Stress Detected                │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### 📈 Stress History & Analytics
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  ● ● ●   stresssense.ai/history                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   📈 Your Stress Trend — Last 7 Days                           │
-│                                                                 │
-│   High │  ██                         ██                         │
-│        │  ██   ██              ██    ██                         │
-│   Med  │  ██   ██    ██        ██    ██    ██                   │
-│        │  ██   ██    ██   ██   ██    ██    ██                   │
-│   Low  └────────────────────────────────────────                │
-│          Mon  Tue  Wed  Thu  Fri  Sat  Sun                      │
-│                                                                 │
-│   🧠 Insight: Stress peaks on Monday & Friday                  │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### 🤖 AI Chatbot
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  ● ● ●   stresssense.ai/chat                                    │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│   🤖 StressSense Assistant                         💙 Onlin    │
-│   ─────────────────────────────────────────────────────────     │
-│                                                                 │
-│   🤖  Hi! I'm here to support your mental wellness journey.     │
-│       How are you feeling today?                                │
-│                                                                 │
-│   👤  I've been feeling anxious lately, what should I do?      │
-│                                                                 │
-│   🤖  Here are some techniques that can help:                  │
-│       1. Practice deep breathing for 5 minutes                  │
-│       2. Take short breaks every hour                           │
-│       3. Check your stress dashboard for patterns 📊           │
-│                                                                 │
-│   [ Type your message...                           Send →  ]    │
-└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
