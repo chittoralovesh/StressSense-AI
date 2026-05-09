@@ -4,14 +4,16 @@
 
 # 🧠 StressSense AI
 
-### Human Stress Detection Based on Sleeping Habits
+### AI-Powered Stress Detection & Mental Wellness Platform 💙
 
-[![Python](https://img.shields.io/badge/Python-3.9+-00e5c8?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Flask](https://img.shields.io/badge/Flask-3.1-00b8a4?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-e040fb?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6-4fc3f7?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
-[![Java](https://img.shields.io/badge/Java-17+-ffca28?style=for-the-badge&logo=openjdk&logoColor=black)](https://java.com)
-[![License](https://img.shields.io/badge/Open_Source-❤️-ff5252?style=for-the-badge)](LICENSE)
+<br/>
+
+[![React](https://img.shields.io/badge/React.js-Frontend-00e5c8?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-Backend-4fc3f7?style=for-the-badge&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![OpenAI](https://img.shields.io/badge/OpenAI-Chatbot-e040fb?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com)
+[![Vercel](https://img.shields.io/badge/Vercel-Frontend-ffca28?style=for-the-badge&logo=vercel&logoColor=black)](https://vercel.com)
+[![Render](https://img.shields.io/badge/Render-Backend-ff5252?style=for-the-badge&logo=render&logoColor=white)](https://render.com)
+[![License](https://img.shields.io/badge/Open_Source-❤️-00e5c8?style=for-the-badge)](LICENSE)
 
 <br/>
 
@@ -19,7 +21,7 @@
 
 <br/>
 
-**[🚀 Get Started](#-getting-started) · [👁 View Demo](#-demo-screenshots) · [🛠 Tech Stack](#-tech-stack) · [🤝 Contribute](#-contributing)**
+**[🚀 Get Started](#%EF%B8%8F-installation--setup) · [👁 Demo](#-demo-screenshots) · [🛠 Tech Stack](#%EF%B8%8F-tech-stack) · [🤝 Contribute](#-contributing)**
 
 <br/>
 
@@ -27,120 +29,143 @@
 
 ---
 
-## 🌟 What is StressSense AI?
+## 🚀 Overview
 
-**StressSense AI** is a web application that predicts stress levels by analyzing sleep patterns and physiological data. Using a blend of classical machine learning and deep learning, it transforms raw sleep metrics into actionable mental health insights — served through a clean, responsive web interface.
+**StressSense AI** is a full-stack web application designed to analyze user stress levels and provide intelligent mental wellness support. It combines Machine Learning with an AI chatbot to deliver a complete, insight-driven mental health platform.
+
+The platform is structured into two core components:
 
 ```
-  Sleep Hours  ──┐
-  Sleep Quality ─┤──► Preprocessing ──► ML Model ──► Stress Level
-  Heart Rate  ───┤          (pandas, numpy)      (sklearn / TF)
-  Snoring     ───┘
+┌─────────────────────────────────────────────────────────────────┐
+│                      StressSense AI                             │
+│                                                                 │
+│   📊 Dashboard                     🤖 Chatbot                  │
+│   ─────────────────────            ──────────────────           │
+│   ML-based stress analysis         Answers user queries         │
+│   Random Forest + Neural Net       Powered by OpenAI API        │
+│   History tracking & analytics     Mental wellness guidance     │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🎯 Features
+## ✨ Features
 
-|  | Feature | Description |
-|--|---------|-------------|
-| 🔮 | **Real-Time Prediction** | Instant stress classification — no loading, no delay |
-| 🤖 | **Dual ML Engine** | scikit-learn + TensorFlow for high-accuracy detection |
-| 🌐 | **Flask Web Interface** | Responsive UI with Jinja2 templating, runs on any device |
-| 📊 | **Smart Data Pipeline** | Robust preprocessing with numpy, pandas, and scipy |
-| ⚡ | **Java Backend** | Spring Boot service for high-performance business logic |
-| ☁️ | **One-Click Deploy** | Gunicorn + Procfile — live on Heroku in minutes |
+| Icon | Feature | Description |
+| :--: | :------ | :---------- |
+| 📊 | **ML Stress Detection** | Dual-model approach using Random Forest + Neural Network |
+| 📈 | **Stress History Tracking** | Monitor your stress levels over time |
+| 📉 | **Advanced Analytics** | Visualize patterns and trends in your mental state |
+| 🤖 | **AI Chatbot** | OpenAI-powered assistant for wellness guidance |
+| 🧠 | **Personalized Insights** | Tailored recommendations based on your data |
+| 🌐 | **Fully Responsive** | Works seamlessly on any device or screen size |
+| 🔐 | **Secure API Handling** | API keys handled safely via environment variables |
 
 ---
 
-## 🖥️ Demo Screenshots
+## 🧠 Machine Learning Model
 
-### 📋 Input Form — Enter Your Sleep Data
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  ● ● ●   stresssense.ai/analyze                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   📋 Enter Your Sleep Data                                      │
-│                                                                  │
-│   Sleep Duration (hours)   ████████████░░░░░░  6.5 hrs          │
-│   Sleep Quality  (1-10)    ██████░░░░░░░░░░░░  5 / 10           │
-│   Resting Heart Rate       [ 78 bpm              ]              │
-│   Snoring Rate             [ Moderate            ]              │
-│   Limb Movement            [ Low                 ]              │
-│                                                                  │
-│              [ Analyze Stress Level → ]                         │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-### 📈 Result — Stress Analysis Output
+StressSense AI uses a **dual-model approach** for accurate, reliable predictions:
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  ● ● ●   stresssense.ai/result                                  │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│   📈 Stress Analysis Result                                     │
-│                                                                  │
-│   Low ─────────────── Moderate ─────────────────── High        │
-│   ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░  62%         │
-│                                                                  │
-│   ⚠️  MODERATE STRESS DETECTED                                  │
-│                                                                  │
-│   ┌──────────────┬───────────────┬────────────────┐            │
-│   │ Stress Score │  Confidence   │  Response Time │            │
-│   │     62%      │     94%       │     0.3s       │            │
-│   └──────────────┴───────────────┴────────────────┘            │
-│                                                                  │
-│   💡 Recommendation: Improve sleep hygiene, reduce screen time  │
-│                                                                  │
-└─────────────────────────────────────────────────────────────────┘
+         User Input Data
+               │
+               ▼
+  ┌────────────────────────────────┐
+  │       ML Prediction Layer      │
+  │                                │
+  │  🌳 Random Forest              │
+  │  ── Structured data input      │
+  │  ── Stable, reliable results   │
+  │                                │
+  │  🧬 Neural Network             │
+  │  ── Complex behavioral patterns│
+  │  ── Deep, accurate predictions │
+  └────────────────────────────────┘
+               │
+               ▼
+         Stress Level Result
 ```
 
-### 🔄 ML Pipeline — Under the Hood
+**🌳 Random Forest Model**
+- Handles structured input data efficiently
+- Provides stable and reliable predictions
+
+**🧬 Neural Network Model**
+- Captures complex behavioral patterns
+- Improves prediction depth and accuracy
+
+> 👉 Both models power the **stress analysis dashboard** together.
+
+---
+
+## 📊 Stress Analytics & History
+
+The platform goes beyond prediction — it's fully insight-driven:
 
 ```
-  📥 Input        🔧 Preprocess      🤖 Inference       📊 Output
-┌──────────┐     ┌──────────────┐   ┌─────────────┐   ┌──────────┐
-│  Sleep   │     │   pandas     │   │ scikit-learn│   │  Stress  │
-│  Data    │────►│   numpy      │──►│ TensorFlow  │──►│  Result  │
-│  (JSON)  │     │   scipy      │   │   joblib    │   │   (UI)   │
-└──────────┘     └──────────────┘   └─────────────┘   └──────────┘
+  High │  ██                    ██
+       │  ██   ██          ██   ██
+  Med  │  ██   ██   ██     ██   ██   ██
+       │  ██   ██   ██  ██ ██   ██   ██
+  Low  └──────────────────────────────────
+        Mon  Tue  Wed  Thu  Fri  Sat  Sun
 ```
+
+- 📈 Tracks user stress levels over time
+- 📊 Displays patterns and trends
+- 🧠 Helps users understand their mental state evolution
+- 📉 Enables better decision-making for stress management
+
+---
+
+## 🤖 Chatbot Functionality
+
+The AI chatbot is designed to complement the ML dashboard:
+
+- ✅ Answers user queries about stress and wellness
+- ✅ Provides general mental wellness guidance
+- ✅ Helps users understand stress-related concepts
+- ❌ Does **not** perform stress prediction — that is handled by the ML models
+
+> 👉 Stress analysis is handled exclusively by the ML dashboard.
 
 ---
 
 ## 🛠️ Tech Stack
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                       StressSense AI                            │
-│                                                                  │
-│  ┌────────────┐  ┌─────────────┐  ┌────────────────────────┐  │
-│  │  Frontend  │  │  Web Layer  │  │       ML / AI          │  │
-│  │            │  │             │  │                        │  │
-│  │  HTML5     │  │  Flask 3.1  │  │  TensorFlow 2.x        │  │
-│  │  CSS3      │  │  Werkzeug   │  │  scikit-learn 1.6      │  │
-│  │  Jinja2    │  │  Gunicorn   │  │  numpy · pandas        │  │
-│  └────────────┘  └─────────────┘  │  scipy · joblib · h5py │  │
-│                                    └────────────────────────┘  │
-│  ┌────────────────────────────────────────────────────────────┐ │
-│  │               Java Backend (Spring Boot)                   │ │
-│  └────────────────────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────────────────────┘
-```
+### 💻 Frontend
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| 🌐 Web Framework | Flask 3.1 + Werkzeug | HTTP handling, routing |
-| 🧠 Deep Learning | TensorFlow 2.x + h5py | Neural network inference |
-| 📐 Classical ML | scikit-learn 1.6 + joblib | Traditional algorithms |
-| 📊 Data Science | numpy · pandas · scipy | Preprocessing pipeline |
-| 🎨 Frontend | HTML5 · CSS3 · Jinja2 | Responsive UI rendering |
-| ☕ Backend | Java · Spring Boot | Business logic service |
-| 🚀 Production | Gunicorn | WSGI application server |
+| Technology | Purpose |
+| :--------- | :------ |
+| React.js | UI framework |
+| HTML & CSS | Structure and styling |
+| JavaScript | Client-side logic |
+
+### ⚙️ Backend
+
+| Technology | Purpose |
+| :--------- | :------ |
+| Java | Core backend language |
+| Spring Boot | REST API framework |
+| REST APIs | Client-server communication |
+
+### 🤖 AI / ML
+
+| Technology | Purpose |
+| :--------- | :------ |
+| Random Forest | Structured data stress prediction |
+| Neural Network | Deep behavioral pattern detection |
+| OpenAI API | AI chatbot assistance |
+
+### 🗄️ Tools & Platforms
+
+| Tool | Purpose |
+| :--- | :------ |
+| Git & GitHub | Version control |
+| Postman | API testing |
+| Vercel | Frontend deployment |
+| Render | Backend deployment |
 
 ---
 
@@ -149,32 +174,32 @@
 ```
 StressSense-AI/
 │
-├── 📂 backend/
-│   └── stress-backend/        ← ☕ Java Spring Boot service
+├── 📂 frontend/          ← ⚛️  React.js frontend
 │
-├── 📂 frontend/               ← 🎨 Frontend source assets
+├── 📂 backend/           ← ☕ Spring Boot backend
 │
-├── 📂 static/                 ← 🖼️  CSS, JavaScript, images
+├── 📂 dataset/           ← 📦 Dataset for ML training
 │
-├── 📂 templates/              ← 📄 Jinja2 HTML templates
+├── 📂 ml-model/          ← 🧠 Trained ML models
 │
-├── 📄 requirements.txt        ← 📦 Python dependencies
-├── 📄 Procfile                ← 🚀 Gunicorn deploy config
-├── 📄 .gitignore
+├── 📂 templates/         ← 📄 HTML templates
+│
+├── 📂 static/            ← 🖼️  Static resources
+│
+├── 📄 requirements.txt   ← 📦 Python dependencies
+├── 📄 Procfile           ← 🚀 Deployment config
 └── 📄 README.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Installation & Setup
 
 ### Prerequisites
 
-![Python](https://img.shields.io/badge/-Python_3.9+-00e5c8?logo=python&logoColor=white&style=flat-square)
+![Node](https://img.shields.io/badge/-Node.js_%26_npm-00e5c8?logo=node.js&logoColor=white&style=flat-square)
 ![Java](https://img.shields.io/badge/-Java_17+-ffca28?logo=openjdk&logoColor=black&style=flat-square)
-![pip](https://img.shields.io/badge/-pip-4fc3f7?logo=pypi&logoColor=white&style=flat-square)
-
-### Installation
+![Git](https://img.shields.io/badge/-Git-4fc3f7?logo=git&logoColor=white&style=flat-square)
 
 **① Clone the repository**
 ```bash
@@ -182,50 +207,115 @@ git clone https://github.com/chittoralovesh/StressSense-AI.git
 cd StressSense-AI
 ```
 
-**② Create and activate a virtual environment**
+**② Backend Setup**
 ```bash
-python -m venv venv
-source venv/bin/activate        # 🪟 Windows: venv\Scripts\activate
+cd backend
+./mvnw spring-boot:run
 ```
 
-**③ Install Python dependencies**
+**③ Frontend Setup**
 ```bash
-pip install -r requirements.txt
+cd frontend
+npm install
+npm start
 ```
 
-**④ Launch the application**
-```bash
-flask run
-# ✅ Open http://localhost:5000
+Open `http://localhost:3000` in your browser. 🎉
+
+**④ Environment Variables**
+
+Create a `.env` file in the root directory:
+```env
+OPENAI_API_KEY=your_api_key_here
+```
+
+> ⚠️ **Never expose your API key publicly.** Add `.env` to your `.gitignore`.
+
+---
+
+## 🌐 Deployment
+
+| Component | Platform | Trigger |
+| :-------- | :------- | :------ |
+| 💻 Frontend | Vercel | Auto-deploys on push to `main` |
+| ⚙️ Backend | Render | REST API live server |
+
+```
+  GitHub Repo
+       │
+       ├──► Vercel ──► React Frontend 🌐
+       │
+       └──► Render ──► Spring Boot Backend ⚙️
 ```
 
 ---
 
-## ☁️ Deploy to Heroku
+## 📸 Demo Screenshots
 
-```bash
-heroku create stresssense-ai
-git push heroku main
-heroku open
-```
-
-The included `Procfile` handles the rest:
-```
-web: gunicorn app:app
-```
-
----
-
-## 🔬 How It Works
+### 📋 Stress Analysis Dashboard
 
 ```
-   STEP 1            STEP 2             STEP 3            STEP 4
-  ────────          ────────           ────────          ────────
-  📥 Input         🔧 Process          🤖 Predict        📊 Result
+┌─────────────────────────────────────────────────────────────────┐
+│  ● ● ●   stresssense.ai/dashboard                               │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   📊 Stress Analysis Dashboard                                 │
+│                                                                 │
+│   Sleep Duration   ████████████░░░░░░░░  6.5 hrs                │
+│   Sleep Quality    ██████░░░░░░░░░░░░░░  5 / 10                 │
+│   Heart Rate       [ 78 bpm             ]                       │
+│   Snoring Rate     [ Moderate           ]                       │
+│                                                                 │
+│   Low ─────────── Moderate ─────────────────────── High         │
+│   ████████████████████████░░░░░░░░░░░░░░░░░░░  62%              │
+│                    ⚠️  Moderate Stress Detected                │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-  User enters    pandas cleans &    scikit-learn /    Stress level
-  sleep data     normalizes data    TensorFlow runs   shown on UI
-  via web form   + feature eng.     inference model   with score
+### 📈 Stress History & Analytics
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ● ● ●   stresssense.ai/history                                 │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   📈 Your Stress Trend — Last 7 Days                           │
+│                                                                 │
+│   High │  ██                         ██                         │
+│        │  ██   ██              ██    ██                         │
+│   Med  │  ██   ██    ██        ██    ██    ██                   │
+│        │  ██   ██    ██   ██   ██    ██    ██                   │
+│   Low  └────────────────────────────────────────                │
+│          Mon  Tue  Wed  Thu  Fri  Sat  Sun                      │
+│                                                                 │
+│   🧠 Insight: Stress peaks on Monday & Friday                  │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 🤖 AI Chatbot
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ● ● ●   stresssense.ai/chat                                    │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   🤖 StressSense Assistant                         💙 Onlin    │
+│   ─────────────────────────────────────────────────────────     │
+│                                                                 │
+│   🤖  Hi! I'm here to support your mental wellness journey.     │
+│       How are you feeling today?                                │
+│                                                                 │
+│   👤  I've been feeling anxious lately, what should I do?      │
+│                                                                 │
+│   🤖  Here are some techniques that can help:                  │
+│       1. Practice deep breathing for 5 minutes                  │
+│       2. Take short breaks every hour                           │
+│       3. Check your stress dashboard for patterns 📊           │
+│                                                                 │
+│   [ Type your message...                           Send →  ]    │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -241,9 +331,20 @@ web: gunicorn app:app
 
 ---
 
+## 💡 Future Enhancements
+
+| Icon | Enhancement | Description |
+| :--: | :---------- | :---------- |
+| 📱 | **Mobile Application** | Native iOS & Android app |
+| 📊 | **Advanced Predictive Analytics** | Deeper trend forecasting |
+| 🧘 | **Wellness & Meditation Plans** | Personalized mindfulness content |
+| 🔐 | **User Authentication** | Secure login & profile system |
+
+---
+
 ## 🤝 Contributing
 
-All contributions are welcome! Here's how:
+All contributions are welcome!
 
 ```bash
 # 1. Fork the repo on GitHub
@@ -251,7 +352,7 @@ All contributions are welcome! Here's how:
 # 2. Create a feature branch
 git checkout -b feature/your-awesome-feature
 
-# 3. Make your changes and commit
+# 3. Commit your changes
 git add .
 git commit -m "✨ Add your awesome feature"
 
@@ -259,15 +360,13 @@ git commit -m "✨ Add your awesome feature"
 git push origin feature/your-awesome-feature
 ```
 
-Please keep code clean, tested, and well-documented. 💚
-
 ---
 
 ## 📬 Contact
 
-**chittoralovesh**
+**chittoralovesh** — [@chittoralovesh](https://github.com/chittoralovesh)
 
-[![GitHub](https://img.shields.io/badge/GitHub-@chittoralovesh-00e5c8?style=flat-square&logo=github&logoColor=white)](https://github.com/chittoralovesh)
+[![GitHub](https://img.shields.io/badge/GitHub-@chittoralovesh-00e5c8?style=flat-square&logo=github&logoColor=white)](https://github.com/chittoralovesh/StressSense-AI)
 
 ---
 
@@ -286,4 +385,3 @@ Made with ❤️ and lots of ☕
 [![Star](https://img.shields.io/github/stars/chittoralovesh/StressSense-AI?style=social)](https://github.com/chittoralovesh/StressSense-AI)
 
 </div>
-
